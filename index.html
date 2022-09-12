@@ -9,6 +9,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Merienda&family=Tangerine&display=swap" rel="stylesheet">
 <link href="https://avatars.githubusercontent.com/marney-kaka">
+<link href="https://github.com/marney-kaka/marney-kaka">
+<link href="https://github.githubassets.com/favicons/favicon.svg">
 <style>
   body {
     background-image: url('https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg');
@@ -21,58 +23,74 @@
   .text-center {
   	text-align: center;
   }
-  .tech-blogs-box {
-  	text-align: center;
-    border-color: black;
-    border-width: 2px;
-    border-style: solid;
-    padding: 10px;
-    height: auto;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.50), 0 6px 6px rgba(0,0,0,0.50);
-   }
-   #left {
-    float: left;
-    width: 45%;
-  } 
-  .core-blogs-box {
-  	text-align: center;
-    border-color: black;
-    border-width: 2px;
-    border-style: solid;
-    padding: 10px;
-    height: auto;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.50), 0 6px 6px rgba(0,0,0,0.50);
-  } 
-  	#right {
-      float: right;
-      width: 45%;
-  }
-  #hr-recolor {
-  	color: black; 
-    border-style: solid;
-  }
-  .smaller-image {
-  width: 100px;
+    .smaller-image {
+  max-width: 10em;
   height: auto;
   border-radius: 50%;
   border-color: black;
   border-style: solid;
-  blur-radius: 100px;
   float: center;
   }
+  #hr-recolor {
+    position: abosolute;
+    border-color: black; 
+    border-style: solid;
+  }
+  ul {
+  list-style-type: none;
+  margin: 0px, 0px, 0px; 0px;
+  padding: 0;
+  }
+  #blogs-box {
+    text-align: center;
+   border-color: black;
+   border-width: 2px;
+   border-style: solid;
+   padding: 5px;
+   height: 100%;
+   width: 90%;
+   box-shadow: 0 10px 20px rgba(0,0,0,0.50), 0 6px 6px rgba(0,0,0,0.50);
+   margin: auto;
+   bottom: 10px;
+  	} 
+    @media (max-width: 768px) {
+          body {
+            font-size: 75%; 
+            }
+          .core-blogs-box {
+            max-width: 75%;
+            margin: 5px;
+          } 
+          .tech-blogs-box {
+            max-width: 75%;
+            margin: 5px;
+           }
+     @media (max-width: 350px) {
+          body {
+            font-size: 50%; 
+            }
+          .core-blogs-box {
+            max-width: 50%;
+            margin: 5px;
+            font-size: 50%;
+          } 
+          .tech-blogs-box {
+            max-width: 50%;
+            margin: 5px;
+            font-size: 50%;
+           }
+          }
 </style>
 
 <body>
-  <div class="text-center">
+  <section class="text-center">
   <h1>My DevAcademy Journey</h1>
-  <img class=smaller-image src="https://avatars.githubusercontent.com/marney-kaka"></a>
+  <a href="https://github.com/marney-kaka/marney-kaka"><img class="smaller-image" src="https://avatars.githubusercontent.com/marney-kaka" alt="Profile picture of Marney the blog author"></a>
       <p>Kia ora! My name is Marney. <br> Join me as I step into the world of programming with Enspiral Dev Academy. </p>
-  </div>
-  <div>
+  </section>
   <hr id="hr-recolor">
-  <h2 class="text-center">About Me</h2>
-  </div>
-  <div>
+  <div class="text-center">
+  <h2>About Me</h2>
   <p>I love learning new things and Im always looking for ways to make things simpler. I can describe myself as: </p>
       <ul>
         <li>Curious</li>
@@ -83,16 +101,16 @@
         <li>Chill</li>
       </ul>
   </div>
-  
-  <div class="tech-blogs-box" id="left">
+  <section>
+  <div id="blogs-box">
   <h2>Tech Blogs</h2>
-        <p>Each week I will be posting a short update sharing technical challenges I face during my studies with Dev Academy.</p>
-  </div>
+        <p>I'll be sharing technical challenges and lessons throughout my studies with Dev Academy.</p>
+  </div><br>
   
-  <div class="core-blogs-box" id="right">
+  <div id="blogs-box">
   <h2>Core Blogs</h2>
         <p>Each week I will be sharing my reflections and any new insights about me as a learner programmer.  </p>
   </div>
-  
+  </section>
 </body>
 </html>
