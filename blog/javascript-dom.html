@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tech Blog 2</title>
+    <meta charset="UTF-8">
+    <link href="../styles/main.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&family=Tangerine&display=swap" rel="stylesheet">
+  </head>
+  
+  <body class="backg-img">
+    <div>
+  <h1>Tech Blog #2 - 'Los Tres Amigos'</h1>
+  <h3><em>Javascript, HTML and CSS 16 Sept 2022</em></h3>
+          <br>
+          <br>
+    </div>
+    
+    <div id="intro">
+          <p>
+           <img src="https://media.istockphoto.com/vectors/creative-three-people-icon-vector-id1188700274?k=20&m=1188700274&s=612x612&w=0&h=ZoUnW2Jj-wrW2j2k8sfACQGxny_v4MnGqwFkEwq1RV0=" alt="three stick figures holding hands"><br><br>
+            A youtuber named Danielle Thè describes the three coding languages: HTML, CSS and JavaScript as the three friends. HTML is considered the builder, CSS is the painter/stylist and JavaScript is the magician that makes all the magical and fancy things happen on a webpage.
+            Below is an example of how they work together:<br><br>
+           <img src="https://html-css-js.com/images/og.jpg" alt="pieces of blobs changing their appearance and actions using each different language"><br><br>
+            The image above shows HTML providing the building blocks needed to build a blob, CSS changes how they are styled, shaped and positioned on the page, and JavaScript can make them move and perform actions automatically or upon request. This is the JavaScript magic Danielle Thè is referring to when she calls JavaScript 'the magician'.
+          </p>
+    </div>
+            <br>
+            <br>
+
+      <!-- Control Flow and Loops and example from everyday life-->
+  <h4>What is Control Flow?</h4>
+          <p>
+            JavaScript will normally read and follow code instructions from the top down, and from the left to the right of each line. Just like you would do reading a book (here in NZ that is). This is JavaScripts default flow.<br>
+            
+            You can <i>change (or control) the direction of this flow</i> by using  <i>conditions</i> and <i>loops</i>. Applying a loop and using conditions such as <strong>if statements, switch,</strong> and <strong>ternary</strong> can instruct JavaScript to divert its flow when criteria are met, and even loop through a section of code repeatedly until criteria are met. 
+          <p>
+            Like a bus travelling the same route every day. It starts at the bus depot, makes its way through the selected streets, and at the end of the day it returns to the bus depot. This is the bus's default flow. 
+            <br>         
+            After leaving the depot every morning, the bus is given a set of streets to loop (or cycle) through until a condition is met e.g. the drivers shift has ended or it has completed all its scheduled stops for the day.
+            <br>
+            <br>
+            <img class="images" src="https://www.javascripttutorial.net/wp-content/uploads/2022/01/javascript-for-loop.svg" alt="diagram of coloured boxes in a vertical line with arrows pointing to each box">
+          </p>
+            <br>
+            <br>
+            
+    
+      <!-- DOM and how you might interact with it-->
+  <h4>What is the DOM?</h4>
+          <p>
+            <span class="grey-box">"[The DOM] is a platform and language-neutral interface that allows programmes and scripts to dynamically access and update the content, structure, and style of a document."<br> (w3schools.com)</span>
+            <br>
+            <br>
+            DOM stands for <strong>Document Object Model</strong>. It is the map of your webpage that helps JavaScript to easily find and edit the contents on your webpage. When a webpage is loaded, the browser creates a DOM of the page and sorts HTML elements in to a tree like hierarchy to help make sense of everything. The individual objects of the tree structure are sorted in to parent branches and/or children branches. These are referred to as 'nodes'.
+            <br>
+            <br>
+          <img src="https://miro.medium.com/max/1400/1*t9tvdHKjRD20ar4jABwrbQ.jpeg" alt="tree diagram with a hierarchy of html element names at each intersection and point">
+            <br>
+            With the documents' structure and content clearly outlined, the DOM gives you the ability to interact with objects in the HTML document. You can use code (like JavaScript) to query (pick out) objects or elements by CSS classes, Id's etc. and manipulate them by changing their style (attribute), or text values (innerHTML) just to name a couple.<br>
+          </p>
+            <br>
+            <br>
+
+    <!-- difference between accessing Data from Arrays and Objects -->
+  <h4>Accessing data from Objects and Arrays - whats the difference?</h4>
+  <h5>What is an object?</h5>
+          <p>
+            Objects represent a collection of items which can be defined by a set of characteristics (properties) and key:value pairs.
+            Objects are used to group together like data using a single data structure, housed in curly braces '{ properties, key names and values in here }'. 
+          </p>
+          <img src="../images/Object img.PNG" alt="code showing list of cafe menu items and their properties">
+            <br>
+          <p>
+            e.g. This is an unordered collection of menu items at a cafe. The list of products above are stored as an object. Inside the object are different properties (e.g. whiteCoffee or blackCoffee) with related key names and values (e.g. how many are in stock and their prices).
+            <br>
+            Using an array in our functions will easily and accurately find, display or manipulate any of the values inside of the object.
+          </p>
+            <br>
+  <h5>What is an array?</h5>
+            <p>
+              Arrays are used to group a list of items/elements. We first create a single variable (the heading in which they will sit under e.g. products) and list the items or elements inside square brackets separated by a comma:
+              <br>
+              <br>
+            <img src="../images/array.PNG" alt="code with horizontal list of cafe menu items without their properties">
+              <br>
+              An array is a simpler form of an object as it doesnt require key:value pairs.
+              Here is where arrays differ slightly from objects. Array items are <u>indexed starting at zero (0)</u> a.k.a zero-indexed.
+            </p>
+             <br>
+  <h5>The difference between accessing data from arrays and objects</h5>
+            <p>
+              When pulling data from an object, you can use dot notation or bracket notation stating the name of the object and the name of the key.
+              <br>
+              <div class="grey-box">
+              Dot notation looks like this : Object.key or <i>whiteCoffee.stock</i>
+              <br>
+              Bracket notation looks like this : Object["key"] or <i>whiteCoffee["stock"]</i>
+              <br> 
+          </div> 
+              <br> 
+              <br>                
+            This is different to pulling data from an array, because arrays are <u>zero-indexed</u>. Meaning you would replace the name of the key with the index number:
+              <br>
+          <div class="grey-box">
+              Like this : <i>products[1]</i> which will return "whiteCoffee"
+          </div> 
+              <br>
+              <br>
+            </p>
+            <!-- Functions and why theyre helpful -->
+  <h4>Functions - why they're helpful</h4>
+          <p>
+            A function is a body of statements that define a logic, or, give details for JavaScript to action a task / calculate a result for you. Functions are fundamental to JavaScript because they are reusable, and you dont have to re-write code over and over again. A function can use the likes of Objects, Arrays, Loops and Condition Statements to do the thinking for you and require less writing of code and logic overall. They not only get the job done quickly, but they make processing huge amounts of data faster, easier and accurate. 
+          </p>
+            <br>
+            <br>
+      
+  <footer class="white-box"><a href="../index.html">HOME</a></footer>
+  </body>
+</html>

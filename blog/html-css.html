@@ -8,29 +8,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Merienda&family=Tangerine&display=swap" rel="stylesheet">
   </head>
   
-  <body class="backg-img index-body">
+  <body class="backg-img">
     <div>
     <h1>Tech Blog #1 - CSS styling</h1>
     <h3><em>Inline vs Inline-block 16 Sept 2022</em></h3>
     <br>
     <br>
     </div>
-    
-    <p style="text-align:justify">
-      <!-- Intro -->
+    <div id="intro">
       I've done it! I have dipped my toes in to the waters of styling my webpage using CSS (cascading style sheets).
       This is what I have learned about Inline and Inline-block properties.
-    </p>
-      <p style="text-align: left">When applying CSS styling to your webpage, Inline and Inline-block are two <em>display</em> property values that states how an element (e.g. title, paragraph, picture) should be aligned on your webpage.<br>
+    </div>
+      <p>When applying CSS styling to your webpage, Inline and Inline-block are two <em>display</em> property values that states how an element (e.g. title, paragraph, picture) should be aligned on your webpage.<br>
       This is an example of what inline, inline block and block outputs look like<br><br>
-      <img style="width:40em" src="https://th.bing.com/th/id/R.01bd85b015ee0b310cb017569c7eed8d?rik=jdGjArzotu858w&riu=http%3a%2f%2f4.bp.blogspot.com%2f-TiwOixlooJk%2fU4UyEnv_XpI%2fAAAAAAAACFs%2fNuuLz2IvoZ4%2fs1600%2fcss-display-block-vs-inline-block.png&ehk=EiE1Ba548uTmNLw7RJ6WJKdEWOcrrD5TcPZXQylJllU%3d&risl=&pid=ImgRaw&r=0" alt="pictures of blocks placed in line with each other and resizeable blocks in line with each other"></p><br><br>
+      <img src="https://th.bing.com/th/id/R.01bd85b015ee0b310cb017569c7eed8d?rik=jdGjArzotu858w&riu=http%3a%2f%2f4.bp.blogspot.com%2f-TiwOixlooJk%2fU4UyEnv_XpI%2fAAAAAAAACFs%2fNuuLz2IvoZ4%2fs1600%2fcss-display-block-vs-inline-block.png&ehk=EiE1Ba548uTmNLw7RJ6WJKdEWOcrrD5TcPZXQylJllU%3d&risl=&pid=ImgRaw&r=0" alt="pictures of blocks placed in line with each other and resizeable blocks in line with each other"></p><br><br>
     <!-- Inline -->
       <h4 style="display: inline">What is inline?</h4>
-      <span class="grey-backg">display: inline;</span><br><br>
+      <span class="white-box">display: inline;</span><br><br>
     <p>
       There are some elements you may already be using that are inherently inline such as: Span, Anchor and Bold; which style text sitting along the same line/s. As shown in the image above, inline elements will share the same line with another element. They will take up as much width space as they need and won't change their size. Any height and width settings you apply will be ignored.
       Here is an example of working around the height and width restrictions that you can face with the display: inline property:<br><br>
-      <img style="width:40em" src="https://miro.medium.com/max/2048/1*XiJ6m7v-ovwaPVGm8Kv7VA.png" alt="image showing HTML code on the left, CSS styling code on the right and purple boxes underneath showing their outputs">
+      <img src="https://miro.medium.com/max/2048/1*XiJ6m7v-ovwaPVGm8Kv7VA.png" alt="image showing HTML code on the left, CSS styling code on the right and purple boxes underneath showing their outputs">
     </p>
       Because text is inline by default, we dont need to use the display: inline property at all. Instead, the background for each element was styled by changing the background, text color and adjusting margin, height and size properties.
     <br>
@@ -38,16 +36,16 @@
     <br>
     <!-- Inline-Block -->
     <h4 style="display: inline">What is inline-block?</h4>
-      <span class="grey-backg">display: inline-block;</span><br><br>
+      <span class="white-box">display: inline-block;</span><br><br>
     <p>
       Just like the 'inline' display property above, elements with the inline-block display property can sit on the same line as other elements, however, a key difference is that inline-blocks will accept your width and height settings. They are squares that share the space.<br>
       This comes in handy when you want to create a navigation bar with your links sitting in blocks beside each other, or, you want to sit two elements next to each other (e.g. two text boxes).</p>
       <p>Here is an example of what the HTML structure, CSS styling and their output looks like:<br><br>
-      <img style="width:40em" src="https://miro.medium.com/max/1400/1*KpfEAirK3Mi7FKhFRlC4Gg.png" alt="image showing HTML code on the left, CSS styling code on the right and purple boxes underneath showing their outputs"></p>
+      <img src="https://miro.medium.com/max/1400/1*KpfEAirK3Mi7FKhFRlC4Gg.png" alt="image showing HTML code on the left, CSS styling code on the right and purple boxes underneath showing their outputs"></p>
       <p>The screen shot above shows the HTML structure and CSS styling for the three purple elements at the bottom. The contents <em>within</em> the boxes are styled using inline display properties (span and small); the elements themselves are displayed using inline-block. Basically the boxes sit next to each other in a line.</p><br>
     <!-- Block -->
     <h4 style="display: inline">What is block?</h4>
-    <span class="grey-backg">display: block;</span><br><br>
+    <span class="white-box">display: block;</span><br><br>
   <p>Block is the opposite of inline. They are squares that dont share (space that is). When you use the display property 'block', the entire width of the page is reserved for that element. It wont let you place any other HTML elements next to it unless they have the 'float' property. 
     There are some elements that you may already be using which are inherently block styled such as: paragraphs divs, headings. All other elements inline with paragraphs, headings and divs will shift to the next line.</p><br><br>
     <!-- Liken it to something -->
@@ -57,6 +55,6 @@
       The soft duffel bags can be placed on the conveyor belt with other items and can flex and bend to fit in the width of the space however you need.<br>
       The hard shell bags are not flexible at all and you can only shift them left or right to fit other bags on the conveyor belt with them.</p>
       
-  <footer class="grey-backg"><a href="../index.html">HOME</a></footer>
+  <footer class="white-box"><a href="../index.html">HOME</a></footer>
   </body>
 </html>
